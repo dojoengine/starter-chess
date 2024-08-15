@@ -29,8 +29,8 @@ impl StoreImpl of StoreTrait {
     }
 
     #[inline]
-    fn player(self: Store, game_id: u32, color_id: u8) -> Player {
-        get!(self.world, (game_id, color_id), (Player))
+    fn player(self: Store, game_id: u32, color: u8) -> Player {
+        get!(self.world, (game_id, color), (Player))
     }
 
     #[inline]

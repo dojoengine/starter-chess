@@ -13,11 +13,11 @@ mod errors {
 #[generate_trait]
 impl PlayerImpl of PlayerTrait {
     #[inline]
-    fn new(game_id: u32, color_id: u8, player_id: felt252, name: felt252) -> Player {
+    fn new(game_id: u32, color: u8, player_id: felt252, name: felt252) -> Player {
         // [Check] Name is valid
         assert(name != 0, errors::INVALID_NAME);
         // [Return] Player
-        Player { game_id, color_id, id: player_id, name, }
+        Player { game_id, color, id: player_id, name, }
     }
 }
 
@@ -42,7 +42,7 @@ impl PlayerAssert of AssertTrait {
 impl ZeroablePlayerImpl of core::Zeroable<Player> {
     #[inline]
     fn zero() -> Player {
-        Player { game_id: 0, color_id: 0, id: 0, name: 0, }
+        Player { game_id: 0, color: 0, id: 0, name: 0, }
     }
 
     #[inline]
@@ -69,15 +69,15 @@ mod tests {
     // Constants
 
     const GAME_ID: u32 = 1;
-    const COLOR_ID: u8 = 2;
+    const COLOR: u8 = 2;
     const PLAYER_ID: felt252 = 'ID';
     const PLAYER_NAME: felt252 = 'NAME';
 
     #[test]
     fn test_player_new() {
-        let player = PlayerTrait::new(GAME_ID, COLOR_ID, PLAYER_ID, PLAYER_NAME);
+        let player = PlayerTrait::new(GAME_ID, COLOR, PLAYER_ID, PLAYER_NAME);
         assert_eq!(player.game_id, GAME_ID);
-        assert_eq!(player.color_id, COLOR_ID);
+        assert_eq!(player.color, COLOR);
         assert_eq!(player.name, PLAYER_NAME);
     }
 }

@@ -2030,7 +2030,7 @@
           "key": true
         },
         {
-          "name": "color_id",
+          "name": "color",
           "type": "u8",
           "key": true
         },
@@ -2045,8 +2045,8 @@
           "key": false
         }
       ],
-      "class_hash": "0x6a5cbcf4fb169bcce88bf32043eb7325303ec666e20fdc0fda145033489b610",
-      "original_class_hash": "0x6a5cbcf4fb169bcce88bf32043eb7325303ec666e20fdc0fda145033489b610",
+      "class_hash": "0x69043cd91bcef16adcc2f29ae8f5e627e29acceee27276efb4ecea67071abe0",
+      "original_class_hash": "0x69043cd91bcef16adcc2f29ae8f5e627e29acceee27276efb4ecea67071abe0",
       "abi": [
         {
           "type": "impl",
@@ -2424,7 +2424,7 @@
               "type": "core::integer::u32"
             },
             {
-              "name": "color_id",
+              "name": "color",
               "type": "core::integer::u8"
             },
             {

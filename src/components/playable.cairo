@@ -56,9 +56,9 @@ mod PlayableComponent {
             store.set_game(game);
 
             // [Effect] Create first player
-            let color_id: u8 = Color::White.into();
+            let color: u8 = Color::White.into();
             let player_id = get_caller_address().into();
-            let player = PlayerTrait::new(game_id, color_id, player_id, name);
+            let player = PlayerTrait::new(game_id, color, player_id, name);
             store.set_player(player);
 
             // [Return] Game id
@@ -82,13 +82,13 @@ mod PlayableComponent {
             game.assert_not_started();
 
             // [Check] Black Player does not exist
-            let color_id: u8 = Color::Black.into();
-            let player = store.player(game_id, color_id);
+            let color: u8 = Color::Black.into();
+            let player = store.player(game_id, color);
             player.assert_not_exists();
 
             // [Effect] Create a new player
             let player_id = get_caller_address().into();
-            let player = PlayerTrait::new(game_id, color_id, player_id, name);
+            let player = PlayerTrait::new(game_id, color, player_id, name);
             store.set_player(player);
 
             // [Effect] Start the game
