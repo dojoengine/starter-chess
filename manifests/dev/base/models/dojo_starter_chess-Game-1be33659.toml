@@ -1,0 +1,36 @@
+kind = "DojoModel"
+class_hash = "0x166518215c927343c833b34535cca0d5c704a697ddf2000dbfb93c8f99a4869"
+original_class_hash = "0x166518215c927343c833b34535cca0d5c704a697ddf2000dbfb93c8f99a4869"
+abi = "manifests/dev/base/abis/models/dojo_starter_chess-Game-1be33659.json"
+tag = "dojo_starter_chess-Game"
+manifest_name = "dojo_starter_chess-Game-1be33659"
+
+[[members]]
+name = "id"
+type = "u32"
+key = true
+
+[[members]]
+name = "over"
+type = "bool"
+key = false
+
+[[members]]
+name = "color"
+type = "u8"
+key = false
+
+[[members]]
+name = "whites"
+type = "u64"
+key = false
+
+[[members]]
+name = "blacks"
+type = "u64"
+key = false
+
+[[members]]
+name = "pieces"
+type = "felt252"
+key = false

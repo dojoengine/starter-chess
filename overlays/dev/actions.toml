@@ -1,0 +1,2 @@
+tag = "dojo_starter_chess-actions"
+writes = ["dojo_starter_chess-Game", "dojo_starter_chess-Player"]
