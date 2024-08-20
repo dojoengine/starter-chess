@@ -41,6 +41,9 @@ mod systems {
     mod actions;
 }
 
+#[cfg(test)]
 mod tests {
     mod setup;
+    mod test_setup;
+    mod test_move;
 }

@@ -16,7 +16,7 @@ pub struct Player {
     #[key]
     game_id: u32,
     #[key]
-    color_id: u8,
+    color: u8,
     id: felt252,
     name: felt252,
 }
