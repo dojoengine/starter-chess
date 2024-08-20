@@ -1,5 +1,5 @@
 import local from "../manifests/dev/deployment/manifest.json";
-// import release from "../manifests/release/deployment/manifest.json";
+import release from "../manifests/release/deployment/manifest.json";
 
 const {
   VITE_PUBLIC_NODE_URL,
@@ -30,6 +30,6 @@ export function dojoConfig() {
     feeTokenAddress:
       VITE_PUBLIC_FEE_TOKEN_ADDRESS ||
       "0x49d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
-    manifest: VITE_PUBLIC_RELEASE ? local : VITE_PUBLIC_SEPOLIA ? local : local,
+    manifest: VITE_PUBLIC_RELEASE ? release : VITE_PUBLIC_SEPOLIA ? local : local,
   };
 }

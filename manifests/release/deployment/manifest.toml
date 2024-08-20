@@ -1,0 +1,104 @@
+[world]
+kind = "WorldContract"
+class_hash = "0x458d0ce5b14a4844092bdb62050f462d53362304a13febbac6d973691d61be2"
+original_class_hash = "0x458d0ce5b14a4844092bdb62050f462d53362304a13febbac6d973691d61be2"
+abi = "manifests/release/deployment/abis/dojo-world.json"
+address = "0x3bcf0822c097dfee352c9c79763d1c6ad9aedc28c41dc79c1bda7235379dd48"
+transaction_hash = "0x63aef0ce6f03df5c99f7bdedcb433e4775402fb8b22d44a2095ad354b98edeb"
+block_number = 3
+seed = "dojo_starter_chess"
+manifest_name = "dojo-world"
+
+[world.metadata]
+profile_name = "release"
+rpc_url = "https://api.cartridge.gg/x/dojo-starter-chess/katana"
+
+[base]
+kind = "Class"
+class_hash = "0x2427dd10a58850ac9a5ca6ce04b7771b05330fd18f2e481831ad903b969e6b2"
+original_class_hash = "0x2427dd10a58850ac9a5ca6ce04b7771b05330fd18f2e481831ad903b969e6b2"
+abi = "manifests/release/deployment/abis/dojo-base.json"
+tag = "dojo-base"
+manifest_name = "dojo-base"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x37384c69a08c6c153ba5e40375b0c073f1afcd2c85914116ac7a24f12858489"
+class_hash = "0xd4e50a565df2da8883738395a97c3fe8fd7f46628eeb30ce844ed03199f9db"
+original_class_hash = "0xd4e50a565df2da8883738395a97c3fe8fd7f46628eeb30ce844ed03199f9db"
+base_class_hash = "0x2427dd10a58850ac9a5ca6ce04b7771b05330fd18f2e481831ad903b969e6b2"
+abi = "manifests/release/deployment/abis/contracts/dojo_starter_chess-actions-4deba942.json"
+reads = []
+writes = [
+    "dojo_starter_chess-Game",
+    "dojo_starter_chess-Player",
+]
+init_calldata = []
+tag = "dojo_starter_chess-actions"
+manifest_name = "dojo_starter_chess-actions-4deba942"
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x37f4f37680914f11d2c9964cc0dc2a8c1e1cb045e2248f8cbff65d67aff3277"
+original_class_hash = "0x37f4f37680914f11d2c9964cc0dc2a8c1e1cb045e2248f8cbff65d67aff3277"
+abi = "manifests/release/deployment/abis/models/dojo_starter_chess-Game-1be33659.json"
+tag = "dojo_starter_chess-Game"
+manifest_name = "dojo_starter_chess-Game-1be33659"
+
+[[models.members]]
+name = "id"
+type = "u32"
+key = true
+
+[[models.members]]
+name = "over"
+type = "bool"
+key = false
+
+[[models.members]]
+name = "color"
+type = "u8"
+key = false
+
+[[models.members]]
+name = "whites"
+type = "u64"
+key = false
+
+[[models.members]]
+name = "blacks"
+type = "u64"
+key = false
+
+[[models.members]]
+name = "pieces"
+type = "felt252"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0xf04df56f955e652a44f0c37fdc4c063e05c25d9070e267c2fa17682726aa5c"
+original_class_hash = "0xf04df56f955e652a44f0c37fdc4c063e05c25d9070e267c2fa17682726aa5c"
+abi = "manifests/release/deployment/abis/models/dojo_starter_chess-Player-5c4e436c.json"
+tag = "dojo_starter_chess-Player"
+manifest_name = "dojo_starter_chess-Player-5c4e436c"
+
+[[models.members]]
+name = "game_id"
+type = "u32"
+key = true
+
+[[models.members]]
+name = "color"
+type = "u8"
+key = true
+
+[[models.members]]
+name = "id"
+type = "felt252"
+key = false
+
+[[models.members]]
+name = "name"
+type = "felt252"
+key = false
