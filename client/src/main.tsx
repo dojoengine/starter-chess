@@ -17,7 +17,7 @@ function Main() {
     async function initialize() {
       const result = await setup(dojoConfig());
       setSetupResult(result);
-    }
+    };
     initialize();
   }, []);
 

@@ -18,6 +18,6 @@ default = "dojo_starter_chess"
 [env]
 rpc_url = "http://localhost:5050/"
 # Default account for katana with seed = 0
-account_address = "0x3a97370f4ece384866bb31afcc4966d63b67140c703e3ee61a84d8392e4e6f5"
-private_key = "0x459f4d758b670a014a318e97822587982db2c5d3a62adf8261a1566011f5363"
+account_address = "0x1c93a9fa605d381b40beea9782908a636efda659d776e757456e73c37ca4b58"
+private_key = "0x44f54d8c801467f81144ebd06c0966837258556079a9ab39ca467871c707e19"
 # world_address = "0x3fc79ccfd72c1450d2ccb73c5c521a7ec68b6c6af0caf96a0f1c39ce58876c8"  # Uncomment and update this line with your world address.
