@@ -1251,8 +1251,8 @@
     {
       "kind": "DojoContract",
       "address": "0x37384c69a08c6c153ba5e40375b0c073f1afcd2c85914116ac7a24f12858489",
-      "class_hash": "0x553b1db012156889c2521686313f0a2903fe286f09c18cfebcfbd84abf0e1a9",
-      "original_class_hash": "0x553b1db012156889c2521686313f0a2903fe286f09c18cfebcfbd84abf0e1a9",
+      "class_hash": "0x7e7973b1b5dd6f37f3eef7127002db6c21bff864bd53cd426a83ce56be81d59",
+      "original_class_hash": "0x7e7973b1b5dd6f37f3eef7127002db6c21bff864bd53cd426a83ce56be81d59",
       "base_class_hash": "0x2427dd10a58850ac9a5ca6ce04b7771b05330fd18f2e481831ad903b969e6b2",
       "abi": [
         {
@@ -1541,10 +1541,6 @@
       ],
       "init_calldata": [],
       "tag": "dojo_starter_chess-actions",
-      "systems": [
-        "join",
-        "move"
-      ],
       "manifest_name": "dojo_starter_chess-actions-4deba942"
     }
   ],

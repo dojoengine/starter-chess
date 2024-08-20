@@ -69,10 +69,10 @@ impl GameImpl of GameTrait {
         // [Check] Move validity
         piece.assert_valid_move(index, from, to, self.whites, self.blacks);
         // [Effect] Update positions
-        self.whites = Bitmap::set_bit_at(self.whites, from, false);
-        self.blacks = Bitmap::set_bit_at(self.blacks, from, false);
-        self.whites = Bitmap::set_bit_at(self.whites, to, color == Color::White);
-        self.blacks = Bitmap::set_bit_at(self.whites, to, color == Color::Black);
+        self.whites = Bitmap::set_bit_at(self.whites, (from - 1), false);
+        self.blacks = Bitmap::set_bit_at(self.blacks, (from - 1), false);
+        self.whites = Bitmap::set_bit_at(self.whites, (to - 1), color == Color::White);
+        self.blacks = Bitmap::set_bit_at(self.blacks, (to - 1), color == Color::Black);
         // [Effect] Update pieces
         match Packer::index(pieces, to, constants::PIECE_BIT_COUNT) {
             Option::Some(position_index) => {

@@ -51,7 +51,7 @@ mod setup {
     fn spawn_game() -> (IWorldDispatcher, Systems, Context) {
         // [Setup] World
         let models = array![index::player::TEST_CLASS_HASH, index::game::TEST_CLASS_HASH,];
-        let world = spawn_test_world("dojo_starter_chess", models);
+        let world = spawn_test_world(array!["dojo_starter_chess"].span(), models.span());
 
         // [Setup] Systems
         let actions_address = world

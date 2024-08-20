@@ -51,7 +51,7 @@ export const Scene = () => {
             : "Black"}
       </p>
       <div
-        className={`w-[544px] flex flex-row gap-1 flex-wrap-reverse justify-center ${game.over && "grayscale"}`}
+        className={`w-[544px] flex flex-row-reverse gap-1 flex-wrap-reverse justify-center ${game.over && "grayscale"}`}
       >
         {Array.from(Array(size).keys()).map((col: number) =>
           Array.from(Array(size).keys()).map((row: number) => (
@@ -96,7 +96,7 @@ export const Cell = ({
   const color = useMemo(() => {
     if (selection == index) return "bg-indigo-500";
     if (to == index) return "bg-red-500";
-    return (row + col) % 2 === 0 ? "bg-[#C29F82]" : "bg-[#F3E1C2]";
+    return (row + col) % 2 === 0 ? "bg-[#F3E1C2]" : "bg-[#C29F82]";
   }, [row, col, selection, to, index]);
 
   const image = useMemo(() => {

@@ -42,9 +42,9 @@ export class Piece {
       case 2:
         return { piece: PieceType.Bishop, color: ColorType.White };
       case 3:
-        return { piece: PieceType.Queen, color: ColorType.White };
-      case 4:
         return { piece: PieceType.King, color: ColorType.White };
+      case 4:
+        return { piece: PieceType.Queen, color: ColorType.White };
       case 5:
         return { piece: PieceType.Bishop, color: ColorType.White };
       case 6:
@@ -76,9 +76,9 @@ export class Piece {
       case 26:
         return { piece: PieceType.Bishop, color: ColorType.Black };
       case 27:
-        return { piece: PieceType.Queen, color: ColorType.Black };
-      case 28:
         return { piece: PieceType.King, color: ColorType.Black };
+      case 28:
+        return { piece: PieceType.Queen, color: ColorType.Black };
       case 29:
         return { piece: PieceType.Bishop, color: ColorType.Black };
       case 30:
