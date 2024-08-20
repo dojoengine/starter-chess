@@ -96,7 +96,7 @@ export const Cell = ({
   const color = useMemo(() => {
     if (selection == index) return "bg-indigo-500";
     if (to == index) return "bg-red-500";
-    return (row + col) % 2 === 0 ? "bg-[#F3E1C2]" : "bg-[#C29F82]";
+    return (row + col) % 2 === 0 ? "bg-[#C29F82]" : "bg-[#F3E1C2]";
   }, [row, col, selection, to, index]);
 
   const image = useMemo(() => {

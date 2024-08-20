@@ -1,10 +1,10 @@
 [world]
 kind = "WorldContract"
-class_hash = "0x76ced5a15cb43c7be7176cff4779cd57c56638a46ddf2c9da709d22298c5e5a"
-original_class_hash = "0x76ced5a15cb43c7be7176cff4779cd57c56638a46ddf2c9da709d22298c5e5a"
+class_hash = "0x458d0ce5b14a4844092bdb62050f462d53362304a13febbac6d973691d61be2"
+original_class_hash = "0x458d0ce5b14a4844092bdb62050f462d53362304a13febbac6d973691d61be2"
 abi = "manifests/dev/deployment/abis/dojo-world.json"
-address = "0x7d0a4a08cf6adb194eaeb9472a1b7d9b6a5fb6f6eb36204e4718beed2da6e3e"
-transaction_hash = "0x1d9fba20a94a4dd110214af3fc8130f5d46f49627a0ebb09ca9b1fa652b8800"
+address = "0x3bcf0822c097dfee352c9c79763d1c6ad9aedc28c41dc79c1bda7235379dd48"
+transaction_hash = "0x5baf42b18019f00c98021c0b4cd0c62da425a278c6d44f7ab3a03c5be0b4610"
 block_number = 3
 seed = "dojo_starter_chess"
 manifest_name = "dojo-world"
@@ -23,9 +23,9 @@ manifest_name = "dojo-base"
 
 [[contracts]]
 kind = "DojoContract"
-address = "0x47d7819ecc60e7add1319bb2b822d3b76e9e879556b8f2d3d752e3bdcc5cc90"
-class_hash = "0xf3a4ef9731a4fb3081c3b77886adb8f9398a911fac4fe145f54292d0b1651d"
-original_class_hash = "0xf3a4ef9731a4fb3081c3b77886adb8f9398a911fac4fe145f54292d0b1651d"
+address = "0x37384c69a08c6c153ba5e40375b0c073f1afcd2c85914116ac7a24f12858489"
+class_hash = "0x553b1db012156889c2521686313f0a2903fe286f09c18cfebcfbd84abf0e1a9"
+original_class_hash = "0x553b1db012156889c2521686313f0a2903fe286f09c18cfebcfbd84abf0e1a9"
 base_class_hash = "0x2427dd10a58850ac9a5ca6ce04b7771b05330fd18f2e481831ad903b969e6b2"
 abi = "manifests/dev/deployment/abis/contracts/dojo_starter_chess-actions-4deba942.json"
 reads = []
@@ -35,12 +35,16 @@ writes = [
 ]
 init_calldata = []
 tag = "dojo_starter_chess-actions"
+systems = [
+    "join",
+    "move",
+]
 manifest_name = "dojo_starter_chess-actions-4deba942"
 
 [[models]]
 kind = "DojoModel"
-class_hash = "0x166518215c927343c833b34535cca0d5c704a697ddf2000dbfb93c8f99a4869"
-original_class_hash = "0x166518215c927343c833b34535cca0d5c704a697ddf2000dbfb93c8f99a4869"
+class_hash = "0x37f4f37680914f11d2c9964cc0dc2a8c1e1cb045e2248f8cbff65d67aff3277"
+original_class_hash = "0x37f4f37680914f11d2c9964cc0dc2a8c1e1cb045e2248f8cbff65d67aff3277"
 abi = "manifests/dev/deployment/abis/models/dojo_starter_chess-Game-1be33659.json"
 tag = "dojo_starter_chess-Game"
 manifest_name = "dojo_starter_chess-Game-1be33659"
@@ -77,8 +81,8 @@ key = false
 
 [[models]]
 kind = "DojoModel"
-class_hash = "0x69043cd91bcef16adcc2f29ae8f5e627e29acceee27276efb4ecea67071abe0"
-original_class_hash = "0x69043cd91bcef16adcc2f29ae8f5e627e29acceee27276efb4ecea67071abe0"
+class_hash = "0xf04df56f955e652a44f0c37fdc4c063e05c25d9070e267c2fa17682726aa5c"
+original_class_hash = "0xf04df56f955e652a44f0c37fdc4c063e05c25d9070e267c2fa17682726aa5c"
 abi = "manifests/dev/deployment/abis/models/dojo_starter_chess-Player-5c4e436c.json"
 tag = "dojo_starter_chess-Player"
 manifest_name = "dojo_starter_chess-Player-5c4e436c"

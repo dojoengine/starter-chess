@@ -1,6 +1,6 @@
 kind = "DojoModel"
-class_hash = "0x69043cd91bcef16adcc2f29ae8f5e627e29acceee27276efb4ecea67071abe0"
-original_class_hash = "0x69043cd91bcef16adcc2f29ae8f5e627e29acceee27276efb4ecea67071abe0"
+class_hash = "0xf04df56f955e652a44f0c37fdc4c063e05c25d9070e267c2fa17682726aa5c"
+original_class_hash = "0xf04df56f955e652a44f0c37fdc4c063e05c25d9070e267c2fa17682726aa5c"
 abi = "manifests/dev/base/abis/models/dojo_starter_chess-Player-5c4e436c.json"
 tag = "dojo_starter_chess-Player"
 manifest_name = "dojo_starter_chess-Player-5c4e436c"

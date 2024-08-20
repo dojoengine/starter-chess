@@ -1,10 +1,14 @@
 kind = "DojoContract"
-class_hash = "0xf3a4ef9731a4fb3081c3b77886adb8f9398a911fac4fe145f54292d0b1651d"
-original_class_hash = "0xf3a4ef9731a4fb3081c3b77886adb8f9398a911fac4fe145f54292d0b1651d"
+class_hash = "0x553b1db012156889c2521686313f0a2903fe286f09c18cfebcfbd84abf0e1a9"
+original_class_hash = "0x553b1db012156889c2521686313f0a2903fe286f09c18cfebcfbd84abf0e1a9"
 base_class_hash = "0x0"
 abi = "manifests/dev/base/abis/contracts/dojo_starter_chess-actions-4deba942.json"
 reads = []
 writes = []
 init_calldata = []
 tag = "dojo_starter_chess-actions"
+systems = [
+    "join",
+    "move",
+]
 manifest_name = "dojo_starter_chess-actions-4deba942"
