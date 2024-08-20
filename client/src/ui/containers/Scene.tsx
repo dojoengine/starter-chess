@@ -39,7 +39,7 @@ export const Scene = () => {
     return game?.getPositions() ?? {};
   }, [game]);
 
-  if (!game || !size || !positions) return null;
+  if (!game || !size || !positions || !black || !white) return null;
 
   return (
     <div className="flex flex-col gap-4 items-center">
@@ -50,6 +50,7 @@ export const Scene = () => {
             ? "White"
             : "Black"}
       </p>
+      <p className="text-xl">{black.name}</p>
       <div
         className={`w-[544px] flex flex-row-reverse gap-1 flex-wrap-reverse justify-center ${game.over && "grayscale"}`}
       >
@@ -68,6 +69,7 @@ export const Scene = () => {
           )),
         )}
       </div>
+      <p className="text-xl">{white.name}</p>
       <Move />
     </div>
   );
